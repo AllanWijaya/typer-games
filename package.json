@@ -9,11 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "next": "16.2.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.2.4",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
+    "@iconify-icon/react": "^3.0.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
