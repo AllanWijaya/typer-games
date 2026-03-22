@@ -6,6 +6,7 @@ import { API_URL } from "@/core/lib/SystemConfig";
 import Loading from "../loading/Loading";
 import { toast } from "react-toastify";
 import { Button } from "react-bootstrap";
+import IconMain from "../icon/IconMain";
 
 export default function GameMain() {
   const [start, setStart] = useState(false);
@@ -56,11 +57,21 @@ export default function GameMain() {
             </div>
             <FormInput value={text} onChange={(e) => setText(e)} />
           </div>
-          <Button variant="primary" onClick={() => setStart(false)}></Button>
+          <Button
+            className="d-flex justify-content-center align-items-center"
+            variant="primary"
+            onClick={() => setStart(false)}
+          >
+            <IconMain icon="codicon:debug-pause" fontSize={24} />
+          </Button>
         </>
       ) : (
-        <Button variant="primary" onClick={() => setStart(true)}>
-          Start Game
+        <Button
+          className="d-flex justify-content-center align-items-center"
+          variant="primary"
+          onClick={() => setStart(true)}
+        >
+          <IconMain icon="codicon:debug-start" fontSize={24} />
         </Button>
       )}
     </div>
